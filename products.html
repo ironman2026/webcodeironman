@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iRONman Stainless Steel | Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        iron: {
+                            red: '#D50000',
+                            dark: '#0a0a0a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .glass-nav {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Fixed Background */
+        .fixed-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('assets/images/hero_generated.png');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body class="text-white font-sans overflow-x-hidden selection:bg-iron-red selection:text-white">
+
+    <!-- Global Background -->
+    <div class="fixed-bg"></div>
+    <div class="bg-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="assets/images/logo.png" alt="iRONman Logo" class="h-14 w-auto drop-shadow-lg">
+                    <div class="flex flex-col">
+                        <span
+                            class="font-display font-bold text-2xl tracking-widest uppercase text-white">iRONman</span>
+                        <span class="text-[0.6rem] text-iron-red font-bold uppercase tracking-[0.2em]">Stainless
+                            Steel</span>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <div class="flex space-x-1 glass-panel px-6 py-2 rounded-full">
+                        <a href="index.html"
+                            class="px-4 py-1 text-gray-300 font-display text-sm uppercase tracking-widest hover:text-white transition-colors border-r border-white/10">Home</a>
+                        <a href="about.html"
+                            class="px-4 py-1 text-gray-300 font-display text-sm uppercase tracking-widest hover:text-white transition-colors border-r border-white/10">About</a>
+                        <a href="products.html"
+                            class="px-4 py-1 text-white font-display text-sm uppercase tracking-widest hover:text-iron-red transition-colors border-r border-white/10">Products</a>
+                        <a href="contact.html"
+                            class="px-4 py-1 text-gray-300 font-display text-sm uppercase tracking-widest hover:text-white transition-colors">Contact</a>
+                    </div>
+                    <a href="assets/docs/Catalog.pdf" download
+                        class="bg-iron-red/90 hover:bg-red-600 text-white px-6 py-2.5 rounded-sm uppercase text-xs font-bold tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(213,0,0,0.4)] border border-red-500/50 backdrop-blur-sm">
+                        Catalog <i class="fas fa-download ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button class="text-white hover:text-iron-red text-2xl"
+                        onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden glass-panel mx-4 mt-2 rounded-xl" id="mobile-menu">
+            <div class="p-4 space-y-4 flex flex-col text-center">
+                <a href="index.html" class="text-gray-300 font-display uppercase tracking-widest">Home</a>
+                <a href="about.html" class="text-gray-300 font-display uppercase tracking-widest">About</a>
+                <a href="products.html" class="text-white font-display uppercase tracking-widest">Products</a>
+                <a href="contact.html" class="text-gray-300 font-display uppercase tracking-widest">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="relative z-10 pt-32 pb-20">
+
+        <!-- Header -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+            <h1 class="font-display text-5xl md:text-6xl font-bold uppercase tracking-tight mb-4">Product <span
+                    class="text-iron-red">Catalog</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg font-light">
+                Discover our range of premium stainless steel pipes and sheets, engineered for durability and aesthetic
+                perfection.
+            </p>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Section: Pipes -->
+            <div class="mb-20">
+                <div class="flex items-center gap-6 mb-8">
+                    <h2 class="font-display text-3xl font-bold uppercase text-white whitespace-nowrap">01. Standard
+                        Pipes</h2>
+                    <div class="h-px bg-white/20 w-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="glass-panel p-0 rounded-xl overflow-hidden group hover:border-iron-red/50 transition-all duration-300">
+                        <div class="h-64 overflow-hidden relative border-b border-white/5">
+                            <img src="assets/images/product_round.png" alt="Round Pipe"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <div class="absolute bottom-4 left-4">
+                                <span
+                                    class="bg-iron-red text-white text-[10px] font-bold px-2 py-1 uppercase tracking-widest rounded-sm">Best
+                                    Seller</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold mb-2">Round Pipe</h3>
+                            <p class="text-xs text-gray-400 mb-4 uppercase tracking-wider">Construction & Decor</p>
+                            <ul class="text-sm text-gray-300 space-y-2 mb-6 border-l-2 border-white/10 pl-4">
+                                <li>All standard sizes: 9.5mm - 101.6mm</li>
+                                <li>Thickness: 0.8mm - 2.0mm</li>
+                                <li>Finish: Mirror / Matte</li>
+                            </ul>
+                            <a href="contact.html"
+                                class="block w-full py-3 text-center border border-white/20 hover:bg-iron-red hover:border-iron-red text-xs font-bold uppercase tracking-widest transition-all rounded-sm">
+                                Get Quote
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="glass-panel p-0 rounded-xl overflow-hidden group hover:border-iron-red/50 transition-all duration-300">
+                        <div class="h-64 overflow-hidden relative border-b border-white/5">
+                            <img src="assets/images/product_square.png" alt="Square Box"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold mb-2">Square Box</h3>
+                            <p class="text-xs text-gray-400 mb-4 uppercase tracking-wider">Structural & Furniture</p>
+                            <ul class="text-sm text-gray-300 space-y-2 mb-6 border-l-2 border-white/10 pl-4">
+                                <li>Sizes: 12.7mm - 76.2mm</li>
+                                <li>High Load Bearing</li>
+                                <li>Precision Cut Edges</li>
+                            </ul>
+                            <a href="contact.html"
+                                class="block w-full py-3 text-center border border-white/20 hover:bg-iron-red hover:border-iron-red text-xs font-bold uppercase tracking-widest transition-all rounded-sm">
+                                Get Quote
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="glass-panel p-0 rounded-xl overflow-hidden group hover:border-iron-red/50 transition-all duration-300">
+                        <div class="h-64 overflow-hidden relative border-b border-white/5">
+                            <img src="assets/images/product_square.png" alt="Rectangular Box"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold mb-2">Rectangular Box</h3>
+                            <p class="text-xs text-gray-400 mb-4 uppercase tracking-wider">Versatile Frameworks</p>
+                            <ul class="text-sm text-gray-300 space-y-2 mb-6 border-l-2 border-white/10 pl-4">
+                                <li>Multiple Aspect Ratios</li>
+                                <li>Smooth Welding Seams</li>
+                                <li>Custom Lengths</li>
+                            </ul>
+                            <a href="contact.html"
+                                class="block w-full py-3 text-center border border-white/20 hover:bg-iron-red hover:border-iron-red text-xs font-bold uppercase tracking-widest transition-all rounded-sm">
+                                Get Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section: Raw Materials -->
+            <div class="mb-20">
+                <div class="flex items-center gap-6 mb-8">
+                    <h2 class="font-display text-3xl font-bold uppercase text-white whitespace-nowrap">02. Industrial
+                        Materials</h2>
+                    <div class="h-px bg-white/20 w-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Raw material list style -->
+                    <div
+                        class="glass-panel p-8 rounded-xl flex flex-col md:flex-row gap-8 items-center border border-white/5 hover:bg-white/5 transition-all">
+                        <img src="assets/images/product_coil.png" alt="Coils" class="w-48 h-48 object-contain">
+                        <div>
+                            <h3 class="font-display text-2xl font-bold mb-2">Stainless Steel Coils</h3>
+                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                                Our heavy-duty coils serve as the backbone for various manufacturing needs. Available in
+                                multiple grades (201, 304) and finishes.
+                            </p>
+                            <a href="contact.html"
+                                class="text-iron-red text-xs font-bold uppercase tracking-widest hover:text-white transition-colors">Request
+                                Spec Sheet <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="glass-panel p-8 rounded-xl flex flex-col md:flex-row gap-8 items-center border border-white/5 hover:bg-white/5 transition-all">
+                        <img src="assets/images/product_sheet.png" alt="Sheets" class="w-48 h-48 object-contain">
+                        <div>
+                            <h3 class="font-display text-2xl font-bold mb-2">Mirror/Matte Sheets</h3>
+                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                                Premium 8K Mirror polish sheets that offer perfect reflection, or diverse matte options
+                                for industrial cladding and surfaces.
+                            </p>
+                            <a href="contact.html"
+                                class="text-iron-red text-xs font-bold uppercase tracking-widest hover:text-white transition-colors">Request
+                                Spec Sheet <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section: Specs -->
+            <div class="glass-panel p-8 rounded-xl">
+                <h2 class="font-display text-2xl font-bold uppercase text-white mb-6 border-b border-white/10 pb-4">
+                    Technical Specifications</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <img src="assets/images/products_chart.jpg"
+                        class="rounded opacity-80 hover:opacity-100 transition-opacity w-full">
+                    <div class="space-y-4 text-sm text-gray-400">
+                        <p>Our products adhere to international standards for thickness tolerance and chemical
+                            composition.</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-black/40 p-4 rounded border border-white/10">
+                                <div class="text-iron-red font-bold">201 Grade</div>
+                                <div class="text-xs mt-1">Cost-effective, good corrosion resistance for indoor/mild
+                                    environments.</div>
+                            </div>
+                            <div class="bg-black/40 p-4 rounded border border-white/10">
+                                <div class="text-iron-red font-bold">304 Grade</div>
+                                <div class="text-xs mt-1">Excellent corrosion resistance, ideal for outdoor and chemical
+                                    applications.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass-nav py-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-gray-500 uppercase tracking-widest">
+            <p>&copy; 2026 iRONman Company Ltd.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

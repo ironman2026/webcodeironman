@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iRONman Stainless Steel | Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        iron: {
+                            red: '#D50000',
+                            dark: '#0a0a0a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .glass-nav {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .fixed-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('assets/images/hero_generated.png');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body class="text-white font-sans overflow-x-hidden selection:bg-iron-red selection:text-white">
+
+    <div class="fixed-bg"></div>
+    <div class="bg-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="assets/images/logo.png" alt="iRONman Logo" class="h-14 w-auto drop-shadow-lg">
+                    <div class="flex flex-col">
+                        <span
+                            class="font-display font-bold text-2xl tracking-widest uppercase text-white">iRONman</span>
+                        <span class="text-[0.6rem] text-iron-red font-bold uppercase tracking-[0.2em]">Stainless
+                            Steel</span>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <div class="flex space-x-1 glass-panel px-6 py-2 rounded-full">
+                        <a href="index.html"
+                            class="px-4 py-1 text-gray-300 font-display text-sm uppercase tracking-widest hover:text-white transition-colors border-r border-white/10">Home</a>
+                        <a href="about.html"
+                            class="px-4 py-1 text-gray-300 font-display text-sm uppercase tracking-widest hover:text-white transition-colors border-r border-white/10">About</a>
+                        <a href="products.html"
+                            class="px-4 py-1 text-gray-300 font-display text-sm uppercase tracking-widest hover:text-white transition-colors border-r border-white/10">Products</a>
+                        <a href="contact.html"
+                            class="px-4 py-1 text-white font-display text-sm uppercase tracking-widest hover:text-iron-red transition-colors">Contact</a>
+                    </div>
+                </div>
+
+                <div class="md:hidden">
+                    <button class="text-white hover:text-iron-red text-2xl"
+                        onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:hidden glass-panel mx-4 mt-2 rounded-xl" id="mobile-menu">
+            <div class="p-4 space-y-4 flex flex-col text-center">
+                <a href="index.html" class="text-gray-300 font-display uppercase tracking-widest">Home</a>
+                <a href="about.html" class="text-gray-300 font-display uppercase tracking-widest">About</a>
+                <a href="products.html" class="text-gray-300 font-display uppercase tracking-widest">Products</a>
+                <a href="contact.html" class="text-white font-display uppercase tracking-widest">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="relative z-10 pt-32 pb-20">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-iron-red font-bold uppercase tracking-[0.2em] text-xs">Get in Touch</span>
+                <h1 class="font-display text-5xl md:text-6xl font-bold mt-2 uppercase">Contact Us</h1>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <!-- Address Card -->
+                <div class="glass-panel p-8 rounded-xl text-center hover:bg-white/5 transition-all group">
+                    <div
+                        class="w-16 h-16 mx-auto bg-black/40 rounded-full flex items-center justify-center mb-6 border border-white/10 group-hover:border-iron-red transition-colors">
+                        <i class="fas fa-map-marker-alt text-2xl text-iron-red"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold uppercase mb-4 text-white">Visit Us</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Atlaspur, Masumabad, Bhulta,<br>Rupganj, Narayanganj-1462
+                    </p>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="glass-panel p-8 rounded-xl text-center hover:bg-white/5 transition-all group">
+                    <div
+                        class="w-16 h-16 mx-auto bg-black/40 rounded-full flex items-center justify-center mb-6 border border-white/10 group-hover:border-iron-red transition-colors">
+                        <i class="fas fa-phone-alt text-2xl text-iron-red"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold uppercase mb-4 text-white">Call Us</h3>
+                    <p class="text-gray-300 text-sm mb-2">Mon-Sat: 9am - 6pm</p>
+                    <a href="tel:+8801733397170"
+                        class="text-lg font-bold text-white hover:text-iron-red transition-colors">+880 1733 397170</a>
+                </div>
+
+                <!-- Email Card -->
+                <div class="glass-panel p-8 rounded-xl text-center hover:bg-white/5 transition-all group">
+                    <div
+                        class="w-16 h-16 mx-auto bg-black/40 rounded-full flex items-center justify-center mb-6 border border-white/10 group-hover:border-iron-red transition-colors">
+                        <i class="fas fa-envelope text-2xl text-iron-red"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold uppercase mb-4 text-white">Email Us</h3>
+                    <p class="text-gray-300 text-sm mb-2">For inquiries & quotes</p>
+                    <a href="mailto:ironmancltd@gmail.com"
+                        class="text-lg font-bold text-white hover:text-iron-red transition-colors">ironmancltd@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Social Media & Catalog -->
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-16">
+                <div class="flex gap-4">
+                    <a href="https://www.facebook.com/ironmanbangladesh" target="_blank"
+                        class="px-6 py-3 glass-panel rounded-full flex items-center gap-3 hover:bg-[#1877F2] hover:border-[#1877F2] transition-colors group">
+                        <i class="fab fa-facebook-f text-xl group-hover:text-white"></i> <span
+                            class="uppercase font-bold text-sm tracking-widest">Facebook</span>
+                    </a>
+                    <a href="https://www.youtube.com/@IRONMANCOMPANYLTD" target="_blank"
+                        class="px-6 py-3 glass-panel rounded-full flex items-center gap-3 hover:bg-[#FF0000] hover:border-[#FF0000] transition-colors group">
+                        <i class="fab fa-youtube text-xl group-hover:text-white"></i> <span
+                            class="uppercase font-bold text-sm tracking-widest">YouTube</span>
+                    </a>
+                </div>
+                <div class="h-8 w-px bg-white/10 hidden md:block"></div>
+                <a href="assets/docs/Catalog.pdf" download
+                    class="px-8 py-3 bg-iron-red text-white rounded-full font-bold uppercase tracking-widest text-sm hover:bg-red-700 transition-colors shadow-lg shadow-red-900/20">
+                    <i class="fas fa-download mr-2"></i> Download Full Catalog
+                </a>
+            </div>
+
+            <!-- Map Section -->
+            <div class="glass-panel p-2 rounded-xl">
+                <div
+                    class="relative w-full h-[500px] rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14606.06792955437!2d90.58661665!3d23.76458335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755d64b12345678%3A0x1234567890abcdef!2sBhulta%2C%20Rupganj!5e0!3m2!1sen!2sbd!4v1625581234567!5m2!1sen!2sbd"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="glass-nav py-8 border-t border-white/10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-gray-500 uppercase tracking-widest">
+            <p>&copy; 2026 iRONman Company Ltd.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
