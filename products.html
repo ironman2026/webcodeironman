@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -100,15 +100,15 @@
                             class="px-4 py-1 text-gray-300 font-display text-sm uppercase tracking-widest hover:text-white transition-colors">Contact</a>
                     </div>
                     <a href="assets/docs/Catalog.pdf" download
-                        class="bg-iron-red/90 hover:bg-red-600 text-white px-6 py-2.5 rounded-sm uppercase text-xs font-bold tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(213,0,0,0.4)] border border-red-500/50 backdrop-blur-sm">
-                        Catalog <i class="fas fa-download ml-2"></i>
+                        class="bg-iron-red/90 hover:bg-red-600 text-white px-6 py-2.5 rounded-sm uppercase text-xs font-bold tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(213,0,0,0.4)] hover:shadow-[0_0_30px_rgba(213,0,0,0.6)] border border-red-500/50 backdrop-blur-sm">
+                        Catalog <i class="ph ph-download-simple ml-2"></i>
                     </a>
                 </div>
 
                 <div class="md:hidden">
                     <button class="text-white hover:text-iron-red text-2xl"
                         onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                        <i class="fas fa-bars"></i>
+                        <i class="ph ph-list"></i>
                     </button>
                 </div>
             </div>
@@ -120,6 +120,10 @@
                 <a href="about.html" class="text-gray-300 font-display uppercase tracking-widest">About</a>
                 <a href="products.html" class="text-white font-display uppercase tracking-widest">Products</a>
                 <a href="contact.html" class="text-gray-300 font-display uppercase tracking-widest">Contact</a>
+                <a href="assets/docs/Catalog.pdf" download
+                    class="inline-block bg-iron-red/90 text-white px-6 py-2 rounded-sm uppercase text-xs font-bold tracking-widest">
+                    Catalog <i class="ph ph-download-simple ml-2"></i>
+                </a>
             </div>
         </div>
     </nav>
@@ -221,6 +225,29 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- Card 4: Design Pipe -->
+                    <div
+                        class="glass-panel p-0 rounded-xl overflow-hidden group hover:border-iron-red/50 transition-all duration-300">
+                        <div class="h-64 overflow-hidden relative border-b border-white/5">
+                            <img src="assets/images/product_round.png" alt="Design Pipe"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold mb-2">Design Pipe</h3>
+                            <p class="text-xs text-gray-400 mb-4 uppercase tracking-wider">Decorative & Interior</p>
+                            <ul class="text-sm text-gray-300 space-y-2 mb-6 border-l-2 border-white/10 pl-4">
+                                <li>Intricate Patterns</li>
+                                <li>High-Gloss Finish</li>
+                                <li>Architectural Grade</li>
+                            </ul>
+                            <a href="contact.html"
+                                class="block w-full py-3 text-center border border-white/20 hover:bg-iron-red hover:border-iron-red text-xs font-bold uppercase tracking-widest transition-all rounded-sm">
+                                Get Quote
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -245,7 +272,7 @@
                             </p>
                             <a href="contact.html"
                                 class="text-iron-red text-xs font-bold uppercase tracking-widest hover:text-white transition-colors">Request
-                                Spec Sheet <i class="fas fa-arrow-right ml-1"></i></a>
+                                Spec Sheet <i class="ph ph-arrow-right ml-1"></i></a>
                         </div>
                     </div>
 
@@ -260,7 +287,23 @@
                             </p>
                             <a href="contact.html"
                                 class="text-iron-red text-xs font-bold uppercase tracking-widest hover:text-white transition-colors">Request
-                                Spec Sheet <i class="fas fa-arrow-right ml-1"></i></a>
+                                Spec Sheet <i class="ph ph-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Item 7: Design Sheet -->
+                    <div
+                        class="glass-panel p-8 rounded-xl flex flex-col md:flex-row gap-8 items-center border border-white/5 hover:bg-white/5 transition-all md:col-span-2 lg:col-span-1">
+                        <img src="assets/images/product_sheet.png" alt="Design Sheets" class="w-48 h-48 object-contain">
+                        <div>
+                            <h3 class="font-display text-2xl font-bold mb-2">Design Sheets</h3>
+                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                                Textured and patterned stainless steel sheets for elevator interiors, wall cladding, and
+                                decorative applications.
+                            </p>
+                            <a href="contact.html"
+                                class="text-iron-red text-xs font-bold uppercase tracking-widest hover:text-white transition-colors">Request
+                                Spec Sheet <i class="ph ph-arrow-right ml-1"></i></a>
                         </div>
                     </div>
                 </div>
@@ -270,23 +313,80 @@
             <div class="glass-panel p-8 rounded-xl">
                 <h2 class="font-display text-2xl font-bold uppercase text-white mb-6 border-b border-white/10 pb-4">
                     Technical Specifications</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <img src="assets/images/products_chart.jpg"
-                        class="rounded opacity-80 hover:opacity-100 transition-opacity w-full">
-                    <div class="space-y-4 text-sm text-gray-400">
-                        <p>Our products adhere to international standards for thickness tolerance and chemical
-                            composition.</p>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-black/40 p-4 rounded border border-white/10">
-                                <div class="text-iron-red font-bold">201 Grade</div>
-                                <div class="text-xs mt-1">Cost-effective, good corrosion resistance for indoor/mild
-                                    environments.</div>
-                            </div>
-                            <div class="bg-black/40 p-4 rounded border border-white/10">
-                                <div class="text-iron-red font-bold">304 Grade</div>
-                                <div class="text-xs mt-1">Excellent corrosion resistance, ideal for outdoor and chemical
-                                    applications.</div>
-                            </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Left: Specs & Grades -->
+                    <div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start gap-3">
+                                <i class="ph ph-check-circle text-iron-red text-xl flex-shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-bold text-white block uppercase tracking-wider text-sm">Grades of
+                                        Raw Materials</span>
+                                    <span class="text-gray-400 text-sm">201, J4, J1, 304</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="ph ph-check-circle text-iron-red text-xl flex-shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span
+                                        class="font-bold text-white block uppercase tracking-wider text-sm">Finishes</span>
+                                    <span class="text-gray-400 text-sm">2B & Mirror 8K Finish</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="ph ph-check-circle text-iron-red text-xl flex-shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-bold text-white block uppercase tracking-wider text-sm">Quality
+                                        Promise</span>
+                                    <span class="text-gray-400 text-sm">Made from High-Grade Stainless Steel Coils with
+                                        precise thickness & accurate dimensions.</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3
+                            class="font-display text-lg font-bold uppercase text-white mb-4 border-b border-white/10 pb-2">
+                            Why Choose iRONman?</h3>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li class="flex items-center"><i class="ph ph-caret-right text-iron-red mr-2"></i> Superior
+                                Quality with Mirror & Matte Finishes</li>
+                            <li class="flex items-center"><i class="ph ph-caret-right text-iron-red mr-2"></i>
+                                Competitive Pricing With Consistent Supply</li>
+                            <li class="flex items-center"><i class="ph ph-caret-right text-iron-red mr-2"></i> Custom
+                                Production Per Client's Requirements</li>
+                            <li class="flex items-center"><i class="ph ph-caret-right text-iron-red mr-2"></i> Reliable
+                                Service & Timely Delivery</li>
+                        </ul>
+                    </div>
+
+                    <!-- Right: Uses -->
+                    <div>
+                        <h3
+                            class="font-display text-lg font-bold uppercase text-white mb-6 border-b border-white/10 pb-2">
+                            Uses of Products</h3>
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-3">
+                            <div class="flex items-center text-sm text-gray-300"><i
+                                    class="ph ph-check text-iron-red mr-2"></i> Furniture Manufacturing</div>
+                            <div class="flex items-center text-sm text-gray-300"><i
+                                    class="ph ph-check text-iron-red mr-2"></i> Door & Window Framing</div>
+                            <div class="flex items-center text-sm text-gray-300"><i
+                                    class="ph ph-check text-iron-red mr-2"></i> Infrastructure Development</div>
+                            <div class="flex items-center text-sm text-gray-300"><i
+                                    class="ph ph-check text-iron-red mr-2"></i> Food Processing</div>
+                            <div class="flex items-center text-sm text-gray-300"><i
+                                    class="ph ph-check text-iron-red mr-2"></i> Automobile Components</div>
+                            <div class="flex items-center text-sm text-gray-300"><i
+                                    class="ph ph-check text-iron-red mr-2"></i> Elevators & Lifts</div>
+                            <div class="flex items-center text-sm text-gray-300"><i
+                                    class="ph ph-check text-iron-red mr-2"></i> Kitchen & Gas Equipment</div>
+                            <div class="flex items-center text-sm text-gray-300"><i
+                                    class="ph ph-check text-iron-red mr-2"></i> Beverage Allied Products</div>
+                        </div>
+                        <div class="mt-8 p-4 bg-iron-red/10 border border-iron-red/20 rounded text-center">
+                            <span class="block font-display font-bold uppercase text-white">Bangladesh's Trusted
+                                Name</span>
+                            <span class="block text-xs text-iron-red uppercase tracking-widest">In Stainless
+                                Steel</span>
                         </div>
                     </div>
                 </div>

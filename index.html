@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -105,14 +105,14 @@
                     </div>
                     <a href="assets/docs/Catalog.pdf" download
                         class="bg-iron-red/90 hover:bg-red-600 text-white px-6 py-2.5 rounded-sm uppercase text-xs font-bold tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(213,0,0,0.4)] hover:shadow-[0_0_30px_rgba(213,0,0,0.6)] border border-red-500/50 backdrop-blur-sm">
-                        Catalog <i class="fas fa-download ml-2"></i>
+                        Catalog <i class="ph ph-download-simple ml-2"></i>
                     </a>
                 </div>
 
                 <div class="md:hidden">
                     <button class="text-white hover:text-iron-red text-2xl"
                         onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                        <i class="fas fa-bars"></i>
+                        <i class="ph ph-list"></i>
                     </button>
                 </div>
             </div>
@@ -124,6 +124,10 @@
                 <a href="about.html" class="text-gray-300 font-display uppercase tracking-widest">About</a>
                 <a href="products.html" class="text-gray-300 font-display uppercase tracking-widest">Products</a>
                 <a href="contact.html" class="text-gray-300 font-display uppercase tracking-widest">Contact</a>
+                <a href="assets/docs/Catalog.pdf" download
+                    class="inline-block bg-iron-red/90 text-white px-6 py-2 rounded-sm uppercase text-xs font-bold tracking-widest">
+                    Catalog <i class="ph ph-download-simple ml-2"></i>
+                </a>
             </div>
         </div>
     </nav>
@@ -191,6 +195,162 @@
             </div>
         </section>
 
+        <!-- NEW SECTION 1: Products Overview -->
+        <section class="py-20 relative z-10">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <div class="mb-16">
+                    <h2 class="font-display text-3xl md:text-5xl font-bold uppercase mb-6">
+                        A Comprehensive Range of <span class="text-iron-red text-glow">Stainless Steel Forms</span>
+                    </h2>
+                    <p class="text-gray-300 max-w-3xl mx-auto text-lg font-light leading-relaxed">
+                        We manufacture high-quality products using <strong>201, J4, J1, and 304</strong> grade
+                        materials.
+                        From <strong>Mirror 8K</strong> to Matte finishes, our pipes, tubes, sheets, and coils are
+                        tailored for durability and elegance.
+                    </p>
+                    <div class="mt-8">
+                        <a href="products.html"
+                            class="inline-block border-b border-iron-red text-white uppercase tracking-widest text-sm hover:text-iron-red transition-colors pb-1">View
+                            All Products</a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <!-- Item 1 -->
+                    <div class="group">
+                        <div class="mb-8 transition-transform duration-300 group-hover:scale-110">
+                            <img src="assets/icons/Pipe.webp"
+                                class="w-28 h-28 mx-auto object-contain mix-blend-screen opacity-80 group-hover:opacity-100 filter drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">
+                        </div>
+                        <h3
+                            class="font-display font-bold uppercase tracking-widest text-lg group-hover:text-iron-red transition-colors">
+                            Pipe</h3>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="group">
+                        <div class="mb-8 transition-transform duration-300 group-hover:scale-110">
+                            <img src="assets/icons/Coil-Sheet.webp"
+                                class="w-28 h-28 mx-auto object-contain mix-blend-screen opacity-80 group-hover:opacity-100 filter drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">
+                        </div>
+                        <h3
+                            class="font-display font-bold uppercase tracking-widest text-lg group-hover:text-iron-red transition-colors">
+                            Coil & Sheet</h3>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="group">
+                        <div class="mb-8 transition-transform duration-300 group-hover:scale-110">
+                            <img src="assets/icons/design-pipe.webp"
+                                class="w-28 h-28 mx-auto object-contain mix-blend-screen opacity-80 group-hover:opacity-100 filter drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">
+                        </div>
+                        <h3
+                            class="font-display font-bold uppercase tracking-widest text-lg group-hover:text-iron-red transition-colors">
+                            Design Pipe</h3>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="group">
+                        <div class="mb-8 transition-transform duration-300 group-hover:scale-110">
+                            <img src="assets/icons/Design-Sheet.webp"
+                                class="w-28 h-28 mx-auto object-contain mix-blend-screen opacity-80 group-hover:opacity-100 filter drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">
+                        </div>
+                        <h3
+                            class="font-display font-bold uppercase tracking-widest text-lg group-hover:text-iron-red transition-colors">
+                            Design Sheet</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW SECTION 2: Company Overview -->
+        <section class="py-20 relative z-10 bg-black/20">
+            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+                <!-- Text Content -->
+                <div class="space-y-8">
+                    <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight">
+                        An Industrial Manufacturing <span class="block text-gray-400">Company in Bangladesh</span>
+                    </h2>
+
+                    <div class="space-y-8">
+                        <!-- Feature 1 -->
+                        <div class="flex gap-5 group">
+                            <div
+                                class="flex-shrink-0 w-14 h-14 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center group-hover:border-iron-red/50 transition-colors duration-300">
+                                <img src="assets/icons/company_factory_line_1769748838422.png"
+                                    class="w-8 h-8 object-contain mix-blend-screen opacity-90 group-hover:opacity-100">
+                            </div>
+                            <div>
+                                <h4
+                                    class="font-display font-bold uppercase tracking-wider text-base mb-1 group-hover:text-iron-red transition-colors">
+                                    Leading Manufacturer</h4>
+                                <p class="text-gray-400 text-sm font-light leading-relaxed">Expert manufacturer of
+                                    high-quality stainless steel
+                                    products.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="flex gap-5 group">
+                            <div
+                                class="flex-shrink-0 w-14 h-14 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center group-hover:border-iron-red/50 transition-colors duration-300">
+                                <img src="assets/icons/company_tech_line_1769748852148.png"
+                                    class="w-8 h-8 object-contain mix-blend-screen opacity-90 group-hover:opacity-100">
+                            </div>
+                            <div>
+                                <h4
+                                    class="font-display font-bold uppercase tracking-wider text-base mb-1 group-hover:text-iron-red transition-colors">
+                                    Advanced Technology</h4>
+                                <p class="text-gray-400 text-sm font-light leading-relaxed">Backed by the most advanced
+                                    and innovative production
+                                    technology.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div class="flex gap-5 group">
+                            <div
+                                class="flex-shrink-0 w-14 h-14 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center group-hover:border-iron-red/50 transition-colors duration-300">
+                                <img src="assets/icons/company_chemical_line_1769748864506.png"
+                                    class="w-8 h-8 object-contain mix-blend-screen opacity-90 group-hover:opacity-100">
+                            </div>
+                            <div>
+                                <h4
+                                    class="font-display font-bold uppercase tracking-wider text-base mb-1 group-hover:text-iron-red transition-colors">
+                                    Chemical Precision</h4>
+                                <p class="text-gray-400 text-sm font-light leading-relaxed">Precise chemical composition
+                                    ensured by modern
+                                    spectrometers.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 4 -->
+                        <div class="flex gap-5 group">
+                            <div
+                                class="flex-shrink-0 w-14 h-14 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center group-hover:border-iron-red/50 transition-colors duration-300">
+                                <img src="assets/icons/company_service_line_1769748880036.png"
+                                    class="w-8 h-8 object-contain mix-blend-screen opacity-90 group-hover:opacity-100">
+                            </div>
+                            <div>
+                                <h4
+                                    class="font-display font-bold uppercase tracking-wider text-base mb-1 group-hover:text-iron-red transition-colors">
+                                    Dedicated Service</h4>
+                                <p class="text-gray-400 text-sm font-light leading-relaxed">Timely deliveries and
+                                    committed customer support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image/Visual -->
+                <div class="relative group">
+                    <div
+                        class="glass-panel p-2 rounded-2xl transform rotate-1 transition-transform duration-500 group-hover:rotate-0">
+                        <img src="assets/images/factory_collage.png" alt="Stainless Steel Manufacturing"
+                            class="rounded-xl shadow-2xl w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <!-- Decorative overlay -->
+                    <div
+                        class="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-iron-red rounded-br-3xl opacity-50">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Product Preview Strip -->
         <section class="py-24">
             <div class="max-w-7xl mx-auto px-4">
@@ -201,7 +361,7 @@
                     </div>
                     <a href="products.html"
                         class="text-sm font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors mb-2">View
-                        All <i class="fas fa-arrow-right ml-2 text-iron-red"></i></a>
+                        All <i class="ph ph-arrow-right ml-2 text-iron-red"></i></a>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -241,8 +401,8 @@
             class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 uppercase tracking-widest">
             <p>&copy; 2026 iRONman Company Ltd.</p>
             <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" class="hover:text-white transition-colors">Facebook</a>
-                <a href="#" class="hover:text-white transition-colors">YouTube</a>
+                <a href="#" class="hover:text-white transition-colors"><i class="ph ph-facebook-logo"></i> Facebook</a>
+                <a href="#" class="hover:text-white transition-colors"><i class="ph ph-youtube-logo"></i> YouTube</a>
             </div>
         </div>
     </footer>
