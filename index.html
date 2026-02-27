@@ -276,8 +276,8 @@
                         <div class="flex gap-5 group">
                             <div
                                 class="flex-shrink-0 w-14 h-14 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center group-hover:border-iron-red/50 transition-colors duration-300">
-                                <img src="assets/icons/company_factory_line_1769748838422.png"
-                                    class="w-8 h-8 object-contain mix-blend-screen opacity-90 group-hover:opacity-100">
+                                <i
+                                    class="ph ph-factory text-3xl text-gray-300 group-hover:text-iron-red transition-colors"></i>
                             </div>
                             <div>
                                 <h4
@@ -291,8 +291,8 @@
                         <div class="flex gap-5 group">
                             <div
                                 class="flex-shrink-0 w-14 h-14 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center group-hover:border-iron-red/50 transition-colors duration-300">
-                                <img src="assets/icons/company_tech_line_1769748852148.png"
-                                    class="w-8 h-8 object-contain mix-blend-screen opacity-90 group-hover:opacity-100">
+                                <i
+                                    class="ph ph-cpu text-3xl text-gray-300 group-hover:text-iron-red transition-colors"></i>
                             </div>
                             <div>
                                 <h4
@@ -306,8 +306,8 @@
                         <div class="flex gap-5 group">
                             <div
                                 class="flex-shrink-0 w-14 h-14 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center group-hover:border-iron-red/50 transition-colors duration-300">
-                                <img src="assets/icons/company_chemical_line_1769748864506.png"
-                                    class="w-8 h-8 object-contain mix-blend-screen opacity-90 group-hover:opacity-100">
+                                <i
+                                    class="ph ph-flask text-3xl text-gray-300 group-hover:text-iron-red transition-colors"></i>
                             </div>
                             <div>
                                 <h4
@@ -321,8 +321,8 @@
                         <div class="flex gap-5 group">
                             <div
                                 class="flex-shrink-0 w-14 h-14 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center group-hover:border-iron-red/50 transition-colors duration-300">
-                                <img src="assets/icons/company_service_line_1769748880036.png"
-                                    class="w-8 h-8 object-contain mix-blend-screen opacity-90 group-hover:opacity-100">
+                                <i
+                                    class="ph ph-user-gear text-3xl text-gray-300 group-hover:text-iron-red transition-colors"></i>
                             </div>
                             <div>
                                 <h4
@@ -363,30 +363,79 @@
                         All <i class="ph ph-arrow-right ml-2 text-iron-red"></i></a>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Round Pipe -->
                     <a href="products/"
-                        class="group glass-panel p-8 rounded-xl hover:bg-white/5 transition-all duration-500 text-center">
-                        <img src="assets/images/product_round.png" alt="Round Pipe"
-                            class="h-48 w-auto mx-auto object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
-                        <h3 class="font-display text-xl font-bold uppercase mb-2">Round Pipes</h3>
-                        <p class="text-xs text-gray-500 tracking-widest uppercase">Mirror Polish Finish</p>
+                        class="group glass-panel p-8 rounded-xl hover:bg-white/5 hover:border-iron-red/30 transition-all duration-500 text-center">
+                        <img src="assets/images/realistic_round_pipe.png" alt="Round Pipe"
+                            class="h-48 w-full object-contain mb-6 group-hover:scale-110 transition-transform duration-500 rounded-lg">
+                        <h3 class="font-display text-xl font-bold uppercase mb-2">Round Pipe</h3>
+                        <p class="text-xs text-gray-500 tracking-widest uppercase">Construction & Decor</p>
                     </a>
 
+                    <!-- Square Box -->
                     <a href="products/"
-                        class="group glass-panel p-8 rounded-xl hover:bg-white/5 transition-all duration-500 text-center relative top-8 md:top-0">
-                        <div class="absolute inset-0 bg-iron-red/5 rounded-xl"></div>
-                        <img src="assets/images/product_square.png" alt="Square Pipe"
-                            class="h-48 w-auto mx-auto object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
-                        <h3 class="font-display text-xl font-bold uppercase mb-2">Box Profile</h3>
-                        <p class="text-xs text-gray-500 tracking-widest uppercase">Structural Grade</p>
+                        class="group glass-panel p-8 rounded-xl hover:bg-white/5 hover:border-iron-red/30 transition-all duration-500 text-center border border-white/10 hover:shadow-[0_0_15px_rgba(213,0,0,0.1)]">
+                        <div
+                            class="absolute inset-0 bg-iron-red/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <img src="assets/images/realistic_square_box.png" alt="Square Box"
+                            class="h-48 w-full object-contain mb-6 group-hover:scale-110 transition-transform duration-500 relative z-10 rounded-lg">
+                        <h3 class="font-display text-xl font-bold uppercase mb-2 relative z-10">Square Box</h3>
+                        <p class="text-xs text-gray-500 tracking-widest uppercase relative z-10">Structural & Furniture
+                        </p>
                     </a>
 
+                    <!-- Rectangular Box -->
                     <a href="products/"
-                        class="group glass-panel p-8 rounded-xl hover:bg-white/5 transition-all duration-500 text-center">
-                        <img src="assets/images/product_sheet.png" alt="Sheets"
-                            class="h-48 w-auto mx-auto object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
-                        <h3 class="font-display text-xl font-bold uppercase mb-2">SS Sheets</h3>
-                        <p class="text-xs text-gray-500 tracking-widest uppercase">Paper & PVC Covered</p>
+                        class="group glass-panel p-8 rounded-xl hover:bg-white/5 hover:border-iron-red/30 transition-all duration-500 text-center">
+                        <img src="assets/images/realistic_rectangular_box.png" alt="Rectangular Box"
+                            class="h-48 w-full object-contain mb-6 group-hover:scale-110 transition-transform duration-500 rounded-lg">
+                        <h3 class="font-display text-xl font-bold uppercase mb-2">Rectangular Box</h3>
+                        <p class="text-xs text-gray-500 tracking-widest uppercase">Versatile Frameworks</p>
+                    </a>
+
+                    <!-- Design Pipe -->
+                    <a href="products/"
+                        class="group glass-panel p-8 rounded-xl hover:bg-white/5 hover:border-iron-red/30 transition-all duration-500 text-center border border-white/10 hover:shadow-[0_0_15px_rgba(213,0,0,0.1)]">
+                        <div
+                            class="absolute inset-0 bg-iron-red/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <img src="assets/images/realistic_design_pipe.png" alt="Design Pipe"
+                            class="h-48 w-full object-contain mb-6 group-hover:scale-110 transition-transform duration-500 relative z-10 rounded-lg">
+                        <h3 class="font-display text-xl font-bold uppercase mb-2 relative z-10">Design Pipe</h3>
+                        <p class="text-xs text-gray-500 tracking-widest uppercase relative z-10">Decorative & Interior
+                        </p>
+                    </a>
+
+                    <!-- SS Coils -->
+                    <a href="products/"
+                        class="group glass-panel p-8 rounded-xl hover:bg-white/5 hover:border-iron-red/30 transition-all duration-500 text-center">
+                        <img src="assets/images/realistic_stainless_coil.png" alt="SS Coils"
+                            class="h-48 w-full object-contain mb-6 group-hover:scale-110 transition-transform duration-500 rounded-lg">
+                        <h3 class="font-display text-xl font-bold uppercase mb-2">SS Coils</h3>
+                        <p class="text-xs text-gray-500 tracking-widest uppercase">Industrial Materials</p>
+                    </a>
+
+                    <!-- Mirror/Matte Sheets -->
+                    <a href="products/"
+                        class="group glass-panel p-8 rounded-xl hover:bg-white/5 hover:border-iron-red/30 transition-all duration-500 text-center border border-white/10 hover:shadow-[0_0_15px_rgba(213,0,0,0.1)]">
+                        <div
+                            class="absolute inset-0 bg-iron-red/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <img src="assets/images/realistic_mirror_sheet.png" alt="Mirror/Matte Sheets"
+                            class="h-48 w-full object-contain mb-6 group-hover:scale-110 transition-transform duration-500 relative z-10 rounded-lg">
+                        <h3 class="font-display text-xl font-bold uppercase mb-2 relative z-10">Mirror/Matte Sheets</h3>
+                        <p class="text-xs text-gray-500 tracking-widest uppercase relative z-10">Premium 8K Finish</p>
+                    </a>
+
+                    <!-- Design Sheets -->
+                    <a href="products/"
+                        class="group glass-panel p-8 rounded-xl hover:bg-white/5 hover:border-iron-red/30 transition-all duration-500 text-center lg:col-span-3 xl:col-span-2">
+                        <img src="assets/images/realistic_design_sheet.png" alt="Design Sheets"
+                            class="h-48 w-full object-contain mb-6 group-hover:scale-110 transition-transform duration-500 rounded-lg">
+                        <h3 class="font-display text-xl font-bold uppercase mb-2">Design Sheets</h3>
+                        <p class="text-xs text-gray-500 tracking-widest uppercase">Decorative Applications</p>
                     </a>
                 </div>
             </div>
